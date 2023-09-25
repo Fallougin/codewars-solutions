@@ -5,18 +5,18 @@ import CodePopup from "./CodePopup";
 export default function Solution() {
   const [isCodePopupVisible, setIsCodePopupVisible] = useState(false);
 
-  const closeCodePopup = () => {
+  function closeCodePopup(){
     setIsCodePopupVisible(false);
   }
 
-  const handleButtonClick = () => {
+  function handleButtonClick(){
     const inputElement = document.getElementById('myInput')
     const inputValue = inputElement.value
     const reversedString = inputValue.split('').reverse().join('')
     document.getElementById('outputReversedString').textContent = `Output: ${reversedString}`;
   }
 
-  const toggleCodePopup = () => {
+  function toggleCodePopup(){
     setIsCodePopupVisible(!isCodePopupVisible);
   }
 
