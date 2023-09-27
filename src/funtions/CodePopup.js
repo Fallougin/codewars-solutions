@@ -1,6 +1,6 @@
-import React from "react";
+import React from "react"
 
-export default function CodePopup({ onClose }) {
+export default function CodePopup({ onClose, code }) {
   function handleCloseClick(){
     onClose()
   }
@@ -11,12 +11,10 @@ export default function CodePopup({ onClose }) {
         <button className="close-button" onClick={handleCloseClick}>Close</button>
         <pre>
           <code>
-            {`function solution(str) {
-  return str.split('').reverse().join('');
-}`}
+            {code}
           </code>
         </pre>
       </div>
     </div>
-  );
+  )
 }

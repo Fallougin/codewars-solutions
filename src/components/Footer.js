@@ -1,7 +1,7 @@
 import React from "react"
-import git from '../img/git.png';
-import li from '../img/li.png';
-import discord from '../img/discord.png';
+import git from '../img/git.png'
+import li from '../img/li.png'
+import discord from '../img/discord.png'
 
 export default function Footer() {
     return (
